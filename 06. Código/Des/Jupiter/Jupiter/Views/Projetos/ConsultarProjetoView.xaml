@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Jupiter.Views.Projetos.ConsultarProjetoView">
+  <!--Pages can be added as references or inline-->
+    <TabbedPage.ToolbarItems>
+        <ToolbarItem Icon="user.png"/>
+    </TabbedPage.ToolbarItems>
+    <ContentPage Title="Geral" BackgroundColor="#e9ebee">
+        <StackLayout Orientation="Vertical" Padding="20">
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Nome:" FontSize="Medium" Margin="0,10,0,0"/>
+                <Entry HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <StackLayout>
+                <Label Text="Objetivo:" FontSize="Medium" Margin="0,10,0,0"/>
+                <Editor BackgroundColor="White" HorizontalOptions="FillAndExpand" HeightRequest="80"/>
+            </StackLayout>
+            <StackLayout>
+                <Label Text="Descrição:" FontSize="Medium" Margin="0,10,0,0"/>
+                <Editor BackgroundColor="White" HorizontalOptions="FillAndExpand" HeightRequest="100"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Margin="0,50,0,30">
+                <Button Text="Cancelar" TextColor="White" BackgroundColor="#c0c0c0" HorizontalOptions="FillAndExpand"/>
+                <Button Text="Avançar" TextColor="White" BackgroundColor="#43b05c" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage Title="Envolvidos" BackgroundColor="#e9ebee">
+        <StackLayout Orientation="Vertical" Padding="20" Spacing="20">
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Contratante:" FontSize="Medium" Margin="0,10,0,0"/>
+                <Entry HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Contratada:" FontSize="Medium" Margin="0,10,5,0"/>
+                <Entry HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Gerente:" FontSize="Medium" Margin="0,10,30,0"/>
+                <Entry HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Margin="0,180,0,30">
+                <Button Text="Voltar" TextColor="White" BackgroundColor="#c0c0c0" HorizontalOptions="FillAndExpand"/>
+                <Button Text="Avançar" TextColor="White" BackgroundColor="#43b05c" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage Title="Prazo" BackgroundColor="#e9ebee">
+        <StackLayout Orientation="Vertical" Padding="20" Spacing="20">
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Previsão de Inicio:" FontSize="Medium" Margin="0,10,20,0"/>
+                <DatePicker Format="dd/MM/yyyy" TextColor="SlateGray" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Previsão de Término:" FontSize="Medium" Margin="0,10,0,0"/>
+                <DatePicker Format="dd/MM/yyyy" TextColor="SlateGray" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Margin="0,245,0,30">
+                <Button Text="Voltar" TextColor="White" BackgroundColor="#c0c0c0" HorizontalOptions="FillAndExpand"/>
+                <Button Text="Concluir" TextColor="White" BackgroundColor="#43b05c" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage>
+</TabbedPage>

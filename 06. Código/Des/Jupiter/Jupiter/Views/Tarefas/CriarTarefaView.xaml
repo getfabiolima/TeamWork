@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Jupiter.Views.Tarefas.CriarTarefaView"
+             Title="Criar Tarefa"
+             BarBackgroundColor="#3b5998">
+    <!--Pages can be added as references or inline-->
+    <ContentPage Title="Geral" BackgroundColor="#e9ebee">
+        <Grid  Padding="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.90*"/>
+                <RowDefinition Height="0.10*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <StackLayout Orientation="Vertical">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Nome:" VerticalOptions="CenterAndExpand" FontSize="Medium"/>
+                        <Entry Placeholder="Tarefa x" HorizontalOptions="FillAndExpand"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Tipo:" VerticalOptions="CenterAndExpand" FontSize="Medium"/>
+                        <Picker Title="Selecione" HorizontalOptions="FillAndExpand">
+                            <Picker.Items>
+                                <x:String>Tarefa</x:String>
+                                <x:String>Reuniao</x:String>
+                                <x:String>Revisao</x:String>
+                                <x:String>Duvida</x:String>
+                                <x:String>Teste</x:String>
+                                <x:String>Bug</x:String>
+                            </Picker.Items>
+                        </Picker>
+                    </StackLayout>
+                    <StackLayout>
+                        <Label Text="Descrição:" VerticalOptions="CenterAndExpand" FontSize="Medium"/>
+                        <Editor BackgroundColor="White" HorizontalOptions="FillAndExpand" HeightRequest="200"/>
+                    </StackLayout>
+                </StackLayout>
+            </Grid>
+            <Grid Grid.Row="1">
+                <StackLayout Orientation="Horizontal">
+                    <Button Text="Cancelar" TextColor="White" BackgroundColor="#c0c0c0" HorizontalOptions="FillAndExpand"/>
+                    <Button Text="Avançar" TextColor="White" BackgroundColor="#43b05c" HorizontalOptions="FillAndExpand"/>
+                </StackLayout>
+            </Grid>
+        </Grid>
+    </ContentPage>
+    <ContentPage Title="Projeto" BackgroundColor="#e9ebee">
+        <Grid  Padding="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.90*"/>
+                <RowDefinition Height="0.10*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Projeto:" VerticalOptions="CenterAndExpand" FontSize="Medium"/>
+                        <Picker Title="Selecione" HorizontalOptions="FillAndExpand">
+                            <Picker.Items>
+                                <x:String>SemSoft</x:String>
+                                <x:String>Jupiter</x:String>
+                                <x:String>Ultimus</x:String>
+                            </Picker.Items>
+                        </Picker>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Momento:" VerticalOptions="CenterAndExpand" FontSize="Medium"/>
+                        <Picker Title="Selecione" HorizontalOptions="FillAndExpand">
+                            <Picker.Items>
+                                <x:String>Concepção</x:String>
+                                <x:String>Requisitos</x:String>
+                                <x:String>Modelagem</x:String>
+                                <x:String>Arquitetura</x:String>
+                                <x:String>Codificação</x:String>
+                                <x:String>Testes</x:String>
+                                <x:String>Manutenção</x:String>
+                            </Picker.Items>
+                        </Picker>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Criador:" VerticalOptions="CenterAndExpand" FontSize="Medium"/>
+                        <Picker Title="Selecione" HorizontalOptions="FillAndExpand">
+                            <Picker.Items>
+                                <x:String>Fabio Lima</x:String>
+                                <x:String>Vanderlei Junior</x:String>
+                            </Picker.Items>
+                        </Picker>
+                    </StackLayout>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.40*"/>
+                            <ColumnDefinition Width="0.60*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Text="Responsável:" Grid.Column="0" FontSize="Medium"/>
+                        <Picker Title="Selecione" Grid.Column="1">
+                            <Picker.Items>
+                                <x:String>Fabio Lima</x:String>
+                                <x:String>Vanderlei Junior</x:String>
+                            </Picker.Items>
+                        </Picker>
+                    </Grid>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Estado:" VerticalOptions="CenterAndExpand" FontSize="Medium"/>
+                        <Picker Title="Selecione" HorizontalOptions="FillAndExpand">
+                            <Picker.Items>
+                                <x:String>Ativa</x:String>
+                                <x:String>Iniciada</x:String>
+                                <x:String>Concluída</x:String>
+                            </Picker.Items>
+                        </Picker>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Motivo:" VerticalOptions="CenterAndExpand" FontSize="Medium"/>
+                        <Picker Title="Selecione" HorizontalOptions="FillAndExpand">
+                            <Picker.Items>
+                                <x:String>Nova</x:String>
+                                <x:String>Definida</x:String>
+                                <x:String>Aceita</x:String>
+                                <x:String>Pendente</x:String>
+                                <x:String>Feita</x:String>
+                                <x:String>Não-Concluída</x:String>
+                                <x:String>Verificada</x:String>
+                                <x:String>Fechada</x:String>
+                            </Picker.Items>
+                        </Picker>
+                    </StackLayout>
+                </StackLayout>
+            </Grid>
+            <Grid Grid.Row="1">
+                <StackLayout Orientation="Horizontal">
+                    <Button Text="Voltar" TextColor="White" BackgroundColor="#c0c0c0" HorizontalOptions="FillAndExpand"/>
+                    <Button Text="Avançar" TextColor="White" BackgroundColor="#43b05c" HorizontalOptions="FillAndExpand"/>
+                </StackLayout>
+            </Grid>
+        </Grid>
+    </ContentPage>
+    <ContentPage Title="Prazo" BackgroundColor="#e9ebee">
+        <Grid  Padding="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.90*"/>
+                <RowDefinition Height="0.10*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Previsão de Início:" VerticalOptions="CenterAndExpand" FontSize="Medium"/>
+                        <DatePicker Format="dd/MM/yyyy"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Previsão de Término:" VerticalOptions="CenterAndExpand" FontSize="Medium"/>
+                        <DatePicker Format="dd/MM/yyyy"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Predecessoras:" VerticalOptions="CenterAndExpand" FontSize="Medium"/>
+                        <!--Aqui um listview para adicionar tarefas predecessoras-->
+                    </StackLayout>
+                </StackLayout>
+            </Grid>
+            <Grid Grid.Row="1">
+                <StackLayout Orientation="Horizontal">
+                    <Button Text="Voltar" TextColor="White" BackgroundColor="#c0c0c0" HorizontalOptions="FillAndExpand"/>
+                    <Button Text="Concluir" TextColor="White" BackgroundColor="#43b05c" HorizontalOptions="FillAndExpand"/>
+                </StackLayout>
+            </Grid>
+        </Grid>
+    </ContentPage>
+</TabbedPage>

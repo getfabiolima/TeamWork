@@ -1,0 +1,32 @@
+﻿
+Colocar OK dentro do colchete para o que já foi feito:
+
+Módulo de Projetos:
+
+[] Adicionar o nome do projeto selecionado no ListView como título da View "ConsultarProjetoView";
+
+
+Módulo de Tarefas:
+
+[] Criar a View "ConsultarTarefaView" dentro da pasta "Tarefas". Ela deve ser uma Tabbed Page;
+
+[] Criar um método "ChamarConsultarTarefaView" na classe TarefasViewModel que instancie a view criada no passo 1,
+exatamente como foi feito para as outras Views nessa ViewModel;
+
+[] Adicionar o nome da tarefa selecionada no ListView como título da View "ConsultarTarefaView";
+
+
+Módulo de Usuários de Projeto:
+
+[] Criar a View "ConvidarProjetoView" dentro da pasta "UsuariosProjeto". Ela deve ser uma simples ContentPage;
+
+
+Módulo de Equipes:
+
+[] Terminar de criar as Views de Equipe;
+
+[] Criar a View "ConsultarEquipeView" dentro da pasta "Equipes". Ela deve ser uma Tabbed Page;
+
+[] Criar um método "ChamarConsultarEquipeView" na classe EquipesViewModel que instancie a view criada no passo 1,
+exatamente como foi feito para as outras Views nessa ViewModel;
+

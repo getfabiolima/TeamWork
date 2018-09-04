@@ -1,0 +1,16 @@
+1. No MS Project, selecionar as células do cronograma que aparecerão na imagem.
+
+2. Clicar na guia Tarefa.
+
+3. Dentro da seção Área de Transferência, 
+clicar no ícone do "Copiar" e selecionar "Copiar imagem".
+
+4. Marcar a seguinte configuração:
+
+Renderizar imagem: Para tela
+Copiar: Linhas selecionadas
+Escala de tempo: 
+De: Aqui colocar a data do início do projeto
+Até: Aqui colocar a data de término da última tarefa
+
+5. Na próxima tela, deixar marcado "Manter o intervalo selecionado" e dar OK.

@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Jupiter.Views.PrincipalView"
+             Title="Principal">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Order="Secondary" Text="Minha Conta"/>
+        <ToolbarItem Order="Secondary" Text="Sair"/>
+        <ToolbarItem Icon="envelope2.png"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.5*"/>
+                <RowDefinition Height="0.5*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0"  BackgroundColor="#e9ebee">
+                <Grid Grid.Row="0">
+                    <ListView x:Name="prjList" ItemsSource="{Binding projetos}">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <TextCell Text="{Binding NomeProjeto}" Detail="{Binding DescricaoProjeto}"/>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </Grid>
+            </Grid>
+            <!--Image Source="charts.jpg" Grid.Row="0"/-->
+            <Grid Padding="50,30,50,30" Grid.Row="1" BackgroundColor="#e9ebee">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.5*"/>
+                    <RowDefinition Height="0.5*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.5*"/>
+                    <ColumnDefinition Width="0.5*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid Grid.Row="0" Grid.Column="0" BackgroundColor="#3b5998">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="0.75*"/>
+                            <RowDefinition Height="0.25*"/>
+                        </Grid.RowDefinitions>
+                        <Image Source="tarefas.png" Margin="10,10,10,5">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="ChamarTarefasView"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Text="Tarefas" TextColor="White" Grid.Row="1" HorizontalTextAlignment="Center"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="0" Grid.Column="1" BackgroundColor="#3b5998">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="0.75*"/>
+                            <RowDefinition Height="0.25*"/>
+                        </Grid.RowDefinitions>
+                        <Image Source="projetos.png" Margin="10,10,10,5">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="ChamarProjetosView"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Text="Projetos" TextColor="White" Grid.Row="1" HorizontalTextAlignment="Center"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="1" Grid.Column="0" BackgroundColor="#3b5998">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="0.75*"/>
+                            <RowDefinition Height="0.25*"/>
+                        </Grid.RowDefinitions>
+                        <Image Source="equipes.png" Margin="10,10,10,5">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="ChamarEquipesView"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Text="Equipes" TextColor="White" Grid.Row="1" HorizontalTextAlignment="Center"/>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="1" Grid.Column="1" BackgroundColor="#3b5998">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="0.75*"/>
+                            <RowDefinition Height="0.25*"/>
+                        </Grid.RowDefinitions>
+                        <Image Source="contatos.png" Margin="10,10,10,5">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="ChamarEquipesView"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Text="Contatos" TextColor="White" Grid.Row="1" HorizontalTextAlignment="Center"/>
+                    </Grid>
+                </Grid>
+                <!--<Image Source="projetos.png" Grid.Row="0" Grid.Column="1">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="ChamarProjetosView"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Label Text="Projetos" TextColor="White" Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Center"/>
+                
+                <Image Source="equipes.png" Grid.Row="2" Grid.Column="0">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="ChamarEquipesView"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Label Text="Equipes" TextColor="White" Grid.Row="3" Grid.Column="0" HorizontalTextAlignment="Center"/>
+                
+                <Image Source="contatos.png" Grid.Row="2" Grid.Column="1">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="ChamarProjetosView"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Label Text="Contatos" TextColor="White" Grid.Row="3" Grid.Column="1" HorizontalTextAlignment="Center"/>-->
+
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

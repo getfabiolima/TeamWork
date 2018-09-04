@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Jupiter.Views.CriarContaView"
+             Title="Criar uma Conta">
+    <ContentPage.Content>
+
+            <StackLayout Orientation="Vertical" BackgroundColor="#e9ebee" Padding="20" Spacing="20">
+
+                <!--Nome-->
+                <Entry Placeholder="Digite seu nome" HorizontalTextAlignment="Center"/>
+
+                <!--Usuário-->
+                <Entry Placeholder="Login" HorizontalTextAlignment="Center"/>
+
+                <!--E-mail-->
+                <Entry Placeholder="E-mail" HorizontalTextAlignment="Center"/>
+
+                <!--Senha-->
+                <Entry Placeholder="Crie uma senha" IsPassword="True" HorizontalTextAlignment="Center"/>
+
+                <!--Confirmação de Senha-->
+                <Entry Placeholder="Repita a senha" IsPassword="True" HorizontalTextAlignment="Center"/>
+
+                <StackLayout Orientation="Horizontal" Margin="0,10,0,30">
+
+                    <!--Botão para Efetuar Cadastro-->
+                    <Button Text="Cadastrar" TextColor="White" BackgroundColor="#43b05c" HorizontalOptions="FillAndExpand"/>
+
+                    <!--Botão para Cancelar cadastro-->
+                    <Button Text="Cancelar" TextColor="White" BackgroundColor="#c0c0c0" HorizontalOptions="FillAndExpand"/>
+
+                </StackLayout>
+
+            </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

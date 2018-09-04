@@ -1,0 +1,11 @@
+- Ajustar na descrição dos casos de uso o identificador das regras de negócio ajustadas;
+
+- Editar os ícones que serão usados no projeto e subir para o TFS;
+
+- Remover toda comunicação que retorne da interface para o ator nos diagramas de sequência;
+
+- Alterar o fluxo nos diagramas de sequência para primeiro criar o model vindo da apresentação para ela mesma e depois enviar o model por parâmetro para a camada de negócio com o método de validação;
+
+- Remover da descrição dos casos de uso, DER, diagrama de classes e de sequência qualquer referência ao campo login, pois o mesmo será substituído pelo e-mail;
+
+- Não esquecer de subir para o TFS a descrição dos casos de uso atualizada da minha máquina;
